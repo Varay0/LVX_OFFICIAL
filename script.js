@@ -19,7 +19,7 @@ const portfolioConfig = {
         title: 'Logo & Branding Design',
         desc: 'รวมผลงานออกแบบโลโก้และอัตลักษณ์แบรนด์',
         // แก้เลข 20 เป็นจำนวนรูปที่มีจริงในโฟลเดอร์ images/branding
-        images: generateImages('images/branding', 20, 'jpg') 
+        images: generateImages('images/branding', 29, 'jpg') 
     },
 
     // --- หมวด Ads & Social ---
@@ -209,4 +209,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 });
+
 
