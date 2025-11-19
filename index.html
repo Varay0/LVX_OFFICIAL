@@ -23,90 +23,149 @@
             <div class="profile-info">
                 <div class="status-badge">
                     <span class="pulsing-dot"></span>
-                    <span>NOW! Working at AM Internationnal Hospital</span>
+                    <span>NOW! Working at AM International Hospital</span>
                 </div>
                 <h1>Phuvara Seupasuk <span class="nickname">(Lvinnn)</span></h1>
-                <p class="role">Graphic Designer & UI Enthusiast</p>
+                <p class="role">Graphic Designer & Music Artist</p>
                 <p class="description">
-                    สร้างสรรค์งานวิชวลที่ทรงพลัง ตั้งแต่ Branding ไปจนถึง Game UI 
-                    ผสมผสานศิลปะเข้ากับฟังก์ชัน เพื่อผลลัพธ์ที่แตกต่าง
+                    LVX — Love Visual eXperience<br>
+                    “I create from Love, through Visuals, into eXperiences they can feel.
+They live the eXperience, see the Visuals, and fall in Love.”
                 </p>
                 <div class="social-links">
-                    <a href="#" class="btn-icon"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="btn-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="btn-icon"><i class="fab fa-line"></i></a>
+                    <a href="#" target="_blank" class="btn-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank" class="btn-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" class="btn-icon"><i class="fas fa-line"></i></a>
                 </div>
             </div>
             <div class="profile-img-placeholder">
-                <img src="path/to/your-profile.jpg" alt="Profile" onerror="this.style.display='none'">
+                <img src="images/profile.jpg" alt="Profile" onerror="this.style.display='none'">
                 <div class="img-fallback">YOUR PHOTO</div>
             </div>
         </header>
 
         <nav class="glass-nav">
-            <button class="nav-btn active" data-filter="all">All</button>
-            <button class="nav-btn" data-filter="graphic">Graphic Design</button>
+            <button class="nav-btn active" data-filter="all">All Work</button>
+            <button class="nav-btn" data-filter="graphic">Graphic</button>
             <button class="nav-btn" data-filter="ui">UI</button>
+            <button class="nav-btn" data-filter="music">Music</button>
+            <button class="nav-btn" data-filter="creator">Creator & Video</button>
             <button class="nav-btn" data-filter="experience">Experience</button>
         </nav>
 
         <main class="gallery-grid">
             
-            <div class="grid-item graphic large">
+            <div class="grid-item graphic large" onclick="openModal('branding')">
                 <div class="card-content">
-                    <span class="category">Esport Branding</span>
-                    <h3>Team Identity Design</h3>
-                    <div class="work-img" style="background-image: url('path/to/work1.jpg');"></div>
+                    <span class="category">Branding & Identity</span>
+                    <h3>Logo Design Collection</h3>
+                    <p>รวมผลงานออกแบบโลโก้ที่ผ่านมา</p>
+                    <div class="work-img" style="background-image: url('images/graphic/cover-logo.jpg');"></div>
+                    <div class="overlay-icon"><i class="fas fa-images"></i> ดูรูปทั้งหมด</div>
                 </div>
             </div>
 
-            <div class="grid-item graphic">
+            <div class="grid-item graphic" onclick="openModal('ads')">
                 <div class="card-content">
-                    <span class="category">Ads & Social</span>
-                    <h3>Clinic Promotion</h3>
-                    <div class="work-img" style="background-image: url('path/to/work2.jpg');"></div>
+                    <span class="category">Marketing</span>
+                    <h3>Ads & Banners</h3>
+                    <div class="work-img" style="background-image: url('images/graphic/cover-ads.jpg');"></div>
+                    <div class="overlay-icon"><i class="fas fa-plus"></i></div>
                 </div>
             </div>
 
-            <div class="grid-item ui tall">
+            <div class="grid-item graphic" onclick="openModal('esport')">
                 <div class="card-content">
-                    <span class="category">Game UI</span>
-                    <h3>FiveM Inventory System</h3>
-                    <p>Custom Interface Design</p>
-                    <div class="work-img" style="background-image: url('path/to/ui1.jpg');"></div>
+                    <span class="category">Esport</span>
+                    <h3>Team Jerseys & Media</h3>
+                    <div class="work-img" style="background-image: url('images/graphic/cover-esport.jpg');"></div>
+                     <div class="overlay-icon"><i class="fas fa-plus"></i></div>
                 </div>
             </div>
 
-            <div class="grid-item graphic">
+             <div class="grid-item ui tall" onclick="openModal('fivem')">
                 <div class="card-content">
-                    <span class="category">Logo Design</span>
-                    <h3>Modern Minimalist</h3>
-                    <div class="work-img" style="background-image: url('path/to/logo1.jpg');"></div>
+                    <span class="category">Game UI / UX</span>
+                    <h3>FiveM Server Design</h3>
+                    <p>Interface ระบบเกม Inventory และ HUD</p>
+                    <div class="work-img" style="background-image: url('images/ui/cover-fivem.jpg');"></div>
+                     <div class="overlay-icon"><i class="fas fa-expand"></i></div>
                 </div>
             </div>
 
-             <div class="grid-item graphic">
-                <div class="card-content">
-                    <span class="category">Banner/Vinyl</span>
-                    <h3>Event Backdrop</h3>
-                    <div class="work-img" style="background-image: url('path/to/banner.jpg');"></div>
-                </div>
-            </div>
-
-            <div class="grid-item experience wide hidden">
-                <div class="card-content timeline">
-                    <h3>Professional Journey</h3>
-                    <div class="timeline-item">
-                        <span class="date">Present (5 Months)</span>
-                        <h4>Graphic Designer</h4>
-                        <p>Plastic Surgery Hospital</p>
-                        <small>ดูแลงานกราฟิกโรงพยาบาลศัลยกรรม ทั้งสื่อออนไลน์และออฟไลน์</small>
+            <div class="grid-item music wide">
+                <div class="card-content music-layout">
+                    <div class="music-cover" style="background-image: url('images/music/artist-cover.jpg');"></div>
+                    <div class="music-info">
+                        <span class="category">Music Artist</span>
+                        <h3>Lvinnn (Artist Profile)</h3>
+                        <p>ผลงานเพลง แต่งเอง ร้องเอง ในสไตล์ Lofi / R&B / Pop</p>
+                        
+                        <div class="streaming-links">
+                            <div class="platform-group">
+                                <span><i class="fab fa-apple"></i> Apple Music</span>
+                                <a href="#" target="_blank" class="sm-btn">Profile 1</a>
+                                <a href="#" target="_blank" class="sm-btn">Profile 2</a>
+                            </div>
+                            <div class="platform-group">
+                                <span><i class="fab fa-spotify"></i> Spotify</span>
+                                <a href="#" target="_blank" class="sm-btn">Profile 1</a>
+                                <a href="#" target="_blank" class="sm-btn">Profile 2</a>
+                            </div>
+                            <div class="platform-group">
+                                <span><i class="fab fa-youtube"></i> YouTube</span>
+                                <a href="#" target="_blank" class="sm-btn yt">Official Channel</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="timeline-item">
-                        <span class="date">Previous (10 Months)</span>
-                        <h4>Graphic Designer</h4>
-                        <p>Skincare Company</p>
-                        <small>รับผิดชอบงานออกแบบ Packaging และสื่อโฆษณาผลิตภัณฑ์</small>
+                </div>
+            </div>
+
+            <div class="grid-item creator" onclick="openModal('tiktok')">
+                <div class="card-content">
+                    <span class="category">Content Creator</span>
+                    <h3>TikTok Contents</h3>
+                    <p>รวมคลิปไวรัลและไลฟ์สไตล์</p>
+                    <div class="work-img" style="background-image: url('images/video/cover-tiktok.jpg');"></div>
+                    <div class="overlay-icon"><i class="fab fa-tiktok"></i> Watch</div>
+                </div>
+            </div>
+
+            <div class="grid-item creator" onclick="openModal('video')">
+                <div class="card-content">
+                    <span class="category">Video Editing</span>
+                    <h3>Editing Portfolio</h3>
+                    <p>งานตัดต่อ MV และ VLOG</p>
+                    <div class="work-img" style="background-image: url('images/video/cover-edit.jpg');"></div>
+                    <div class="overlay-icon"><i class="fas fa-play"></i></div>
+                </div>
+            </div>
+
+            <div class="grid-item experience wide hidden" onclick="openModal('exp')">
+                <div class="card-content">
+                    <div class="exp-header">
+                        <h3>Work Experience</h3>
+                        <span class="tap-hint"><i class="fas fa-expand-alt"></i> แตะเพื่ออ่านฉบับเต็ม</span>
+                    </div>
+                    <div class="scroll-preview">
+                        <div class="timeline-item">
+                            <span class="date">Present (5 Months)</span>
+                            <h4>Graphic Designer</h4>
+                            <p>Plastic Surgery Hospital</p>
+                            <small>รับผิดชอบงานสื่อ Marketing ทั้งหมดของโรงพยาบาล...</small>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="date">2023-2024 (10 Months)</span>
+                            <h4>Graphic Designer</h4>
+                            <p>Skincare Company</p>
+                            <small>ออกแบบ Packaging, Banner Ads, จัดวาง CI แบรนด์...</small>
+                        </div>
+                         <div class="timeline-item">
+                            <span class="date">Freelance</span>
+                            <h4>Graphic & UI Designer</h4>
+                            <p>Independent</p>
+                            <small>รับงานออกแบบโลโก้ สตรีมเมอร์ และเซิร์ฟเวอร์เกม...</small>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -114,14 +173,20 @@
         </main>
 
         <footer class="glass-card contact-section">
-            <h2>Ready to create something amazing?</h2>
-            <p>สนใจร่วมงาน หรือจ้างทำโปรเจกต์ ทักมาคุยกันได้เลยครับ</p>
-            <a href="mailto:your-email@gmail.com" class="cta-button">Contact Me</a>
+            <h2>"Oh my god! ไอ่นี่แม่งโครตเก่ง"</h2>
+            <p>ถ้าคิดแบบนั้น... ก็ต้องจ้างแล้วไหมครับ?</p>
+            <a href="mailto:your-email@gmail.com" class="cta-button">Contact for Work</a>
         </footer>
+    </div>
+
+    <div id="portfolioModal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-btn">&times;</span>
+            <div id="modalBody">
+                </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
 </body>
-
 </html>
-
